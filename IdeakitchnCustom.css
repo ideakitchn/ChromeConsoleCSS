@@ -10,7 +10,8 @@
 /*
 /* Sean Gerety
 /* Added a selector to highlight the item that is being 
-/* inspected and it's child elements.
+/* inspected and it's child elements. 
+/* 06 Nov 2013 - Toned down the highlight color on search
 /**********************************************/
 
 /**********************************************/
@@ -35,6 +36,13 @@
 
 #elements-content .parent {
 
+}
+
+.highlighted-search-result {
+  border-radius:1px;
+  padding:1px;
+  margin:-1px;
+  background-color:rgba(255,255,0,0.3) !important;  
 }
 
 /*.outline-disclosure ol:focus li.parent.expanded.selected::before*/
@@ -143,14 +151,6 @@
 #elements-content .webkit-html-js-node {
   color: #c2c3c3 !important;
 }
-.highlighted-search-result {
-  border-radius:1px;
-  padding:1px;
-  margin:01px;
-  background-color:rgba(255,255,0,0.2);
-  
-}
-
 
 /**********************************************/
 /* CSS
